@@ -1,4 +1,5 @@
 use std::env;
+use std::fs;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -7,5 +8,7 @@ fn main() {
     }
 }
 fn init(){
-    println!("Hello,World");
+    fs::create_dir(".rgit").unwrap();
+    println!("Initialized rgit repository");
+    
 }
