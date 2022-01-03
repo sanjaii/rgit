@@ -8,7 +8,7 @@ fn main() {
     }
 }
 fn init(){
-    fs::create_dir(".rgit").unwrap();
+    fs::create_dir(".rgit").expect("rgit repository already exist!");
     println!("Initialized rgit repository");
     
 }
